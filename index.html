@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../styles/body.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <title>Waterdata.com</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="right">
+      <a href="index.html" class="nav-link">Plant Database</a>
+    </nav>
+    <nav class="left"> 
+      <nav class="nav">
+        <a class="nav-link" href="signup.html" target="_blank">Sign Up</a>
+      </nav>
+      <nav class="nav">
+        <a class="nav-link" href="login.html" target="_blank">Login</a>
+      </nav>
+    </nav>
+  </header>
+
+  <section class="body">
+    <h1 class="main-title">Customize <span class="your">Your</span> Sprinkler System</h1>
+
+    <section class="plant-collection">
+      <section class="plant-section">
+        <label class="plant-label" for="plants">Choose from our plant library, or enter custom details:</label>
+        <select id="plants">
+          <option value="Agave">Agave</option>
+          <option value="Apple">Apple</option>
+          <option value="Artichoke">Artichoke</option>
+          <option value="Aster">Aster</option>
+          <option value="Barberry">Barberry</option>
+          <option value="Begonia">Begonia</option>
+          <option value="Bitter Gourd">Bitter Gourd</option>
+          <option value="Blackberry">Blackberry</option>
+          <option value="Bleeding-Heart">Bleeding-Heart</option>
+          <option value="Blueberry">Blueberry</option>
+          <option value="Birch">Birch</option>
+          <option value="Butterfly Weed">Butterfly Weed</option>
+          <option value="Cabbage">Cabbage</option>
+          <option value="Cacti">Cacti</option>
+          <option value="Christmas Fern">Christmas Fern</option>
+          <option value="Crab Apple">Crab Apple</option>
+          <option value="Cranberry">Cranberry</option>
+          <option value="Currant">Alpine Currant</option>
+          <option value="Daffodil">Daffodil</option>
+          <option value="Dahlia">Dahlia</option>
+          <option value="Daisies">Daisies</option>
+          <option value="Eggplant">Eggplant</option>
+          <option value="Elm">Elm</option>
+          <option value="Fern">Fern</option>
+          <option value="Fig">Fig</option>
+          <option value="Grass">Grass</option>
+          <option value="Green Beans">Green Beans</option>
+          <option value="Grapes">Grapes</option>
+          <option value="Heather">Heather</option>
+          <option value="Hydrangea">Hydrangea</option>
+          <option value="Iris">Iris</option>
+          <option value="Kale">Kale</option>
+          <option value="Lavender">Lavender</option>
+          <option value="Lobelia">Lobelia</option>
+          <option value="Okra">Okra</option>
+          <option value="Peach">Peach</option>
+          <option value="Peony">Peony</option>
+          <option value="Pear">Pear</option>
+          <option value="Potatoes">Potatoes</option>
+          <option value="Potentilla">Potentilla</option>
+          <option value="Raspberry">Raspberry</option>
+          <option value="Rose">Rose</option>
+          <option value="Spinach">Spinach</option>
+          <option value="Strawberry">Strawberry</option>
+          <option value="Sugar Maple">Sugar Maple</option>
+          <option value="Succulents">Succulents</option>
+          <option value="Tomato" selected>Tomato</option>
+          <option value="Tulip">Tulip</option>
+          <option value="Zinnia">Zinnia</option>
+          <option value="Zucchini">Zucchini</option>
+        </select>
+
+        <div class="data">
+          <div>
+            Humidity Level: <span class="humidity-js">60-80%</span>
+          </div>
+        </div>
+
+        <article>
+          <p class="title">Plant Description:</p>
+          <p class="description">
+            Tomato plants (Solanum lycopersicum) are sun-loving, warm-season crops grown for their
+            nutritious fruit. They thrive in well-drained, slightly acidic soil and need consistent care.
+            Available in determinate (bush) and indeterminate (vine) varieties, they are used fresh, 
+            cooked, or processed but are vulnerable to pests, diseases, and irregular watering.</p>
+          <a href="https://en.wikipedia.org/wiki/Tomato" class="learn-more-js" target='_blank'>Learn more</a>
+        </article>
+      </section>
+
+      <aside class="image">
+        <img src="../images/plant.png" alt="">
+      </aside>
+    </section>
+
+    <section class="variable-section">
+      <div class="variable">
+        <h4 class="variable-name">Days Considered</h4>
+        <div class="customize-variable">
+          <input type="button" value="-" class="button-variable">
+          <input type="text" value="5" id="" class="input-variable">
+          <input type="button" value="+" class="button-variable">
+          <p class="variable-description">
+            How many days should be considered for the weather forecast calculation?
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Minimum Moisture</h4>
+        <div class="customize-variable">
+          <input type="button" value="-" class="button-variable">
+          <input type="text" value="40" id="" class="input-variable">
+          <input type="button" value="+" class="button-variable">
+          <input type="button" value="Set Based On Plant" class="plant-set-button">
+          <p class="variable-description">
+            What is the minimum humidity percentage considered "dry soil"? 
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Block Water Maximum</h4>
+        <div class="customize-variable">
+          <input type="button" value="-" class="button-variable">
+          <input type="text" value="3" id="" class="input-variable">
+          <input type="button" value="+" class="button-variable">
+          <p class="variable-description">
+            What is the maximum number of days your plants shouldn't be watered for? This overrides the weather forecast algorithm and prevents your plants from being underwatered.
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Watering Time</h4>
+        <div class="customize-variable">
+          <input type="button" value="-" class="button-variable">
+          <input type="text" value="15" id="" class="input-variable">
+          <input type="button" value="+" class="button-variable">
+          <p class="variable-description">
+            How many seconds should one watering last?
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Soil Sample Interval</h4>
+        <div class="customize-variable">
+          <div class="variable-buttons">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="900" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <div class="to-minutes">15 minutes</div>
+          </div>
+          <p class="variable-description">
+            How many seconds between soil samplings?
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Chance Considered</h4>
+        <div class="customize-variable">
+          <input type="button" value="-" class="button-variable">
+          <input type="text" value="70" id="" class="input-variable">
+          <input type="button" value="+" class="button-variable">
+          <p class="variable-description"> 
+            What is the minimum chance as a percentage considered by the weather forecast algorithm?
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Your Location</h4>
+        <div class="customize-variable">
+          <input type="text" value="Montreal" id="" class="input-variable city">
+          <p class="variable-description"> 
+            Needed to make an accurate weather forecast. Must be spelled properly, not case sensitive.
+          </p>
+        </div>
+      </div>
+
+      <div class="variable">
+        <h4 class="variable-name">Forecast Reading Interval</h4>
+        <div class="customize-variable">
+          <div class="variable-buttons">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="7200" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <div class="to-minutes">120 minutes</div>
+          </div>
+          <p class="variable-description"> 
+            How many seconds between weather forecast readings?
+          </p>
+        </div>
+      </div>
+
+      <button class="advanced-button advanced-button-js">Advanced Customization <img class="arrow" src="../images/right.png"></button>
+
+      <div class="advanced-variables">
+        <div class="variable">
+          <h4 class="variable-name">Calibrate Serial Monitor</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="100" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              How many milliseconds before turning on the serial monitor?
+            </p>
+          </div>
+        </div>
+
+        <div class="variable">
+          <h4 class="variable-name">Calibrate Humidity Sensor</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="100" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              How many milliseconds before turning on the soil moisture sensor?
+            </p>
+          </div>
+        </div>
+
+      <div class="variable">
+          <h4 class="variable-name">Serial Delay</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="3000" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              How many milliseconds before replying to python?
+            </p>
+          </div>
+        </div>
+
+        <div class="variable">
+          <h4 class="variable-name">Light rain</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="2.5" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              How many millimeters of water is considered the maximum for light rain?
+            </p>
+          </div>
+        </div>
+
+        <div class="variable">
+          <h4 class="variable-name">Moderate rain</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="5" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              How many millimeters of water is considered the maximum for moderate rain?
+            </p>
+          </div>
+        </div>
+
+        <div class="variable">
+          <h4 class="variable-name">Small Boost</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="50" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              What should the reward for light rain be? For reference: a 100 point boost is equivalent to 1 day without rain.
+            </p>
+          </div>
+        </div>
+
+        <div class="variable">
+          <h4 class="variable-name">Medium Boost</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="100" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              What should the reward for moderate rain be? For reference: a 100 point boost is equivalent to 1 day without rain.
+            </p>
+          </div>
+        </div>
+
+        <div class="variable">
+          <h4 class="variable-name">Large Boost</h4>
+          <div class="customize-variable">
+            <input type="button" value="-" class="button-variable">
+            <input type="text" value="200" id="" class="input-variable">
+            <input type="button" value="+" class="button-variable">
+            <p class="variable-description"> 
+              What should the reward for heavy rain be? For reference: a 100 point boost is equivalent to 1 day without rain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
