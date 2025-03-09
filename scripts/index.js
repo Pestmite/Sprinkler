@@ -292,9 +292,9 @@ function toggleAdvanced() {
   showAdvanced = 1 - showAdvanced;
   if (showAdvanced === 1) {
     document.querySelector('.advanced-variables').classList.add('advanced-variables-show');
-    document.querySelector('.advanced-button').innerHTML = 'Advanced Customization <img class="arrow" src="../images/down.png">';
+    document.querySelector('.advanced-button').innerHTML = 'Advanced Customization <img class="arrow" src="images/down.png">';
   } else {
     document.querySelector('.advanced-variables').classList.remove('advanced-variables-show');
-    document.querySelector('.advanced-button').innerHTML = 'Advanced Customization <img class="arrow" src="../images/right.png">';
+    document.querySelector('.advanced-button').innerHTML = 'Advanced Customization <img class="arrow" src="images/right.png">';
   }
 }
